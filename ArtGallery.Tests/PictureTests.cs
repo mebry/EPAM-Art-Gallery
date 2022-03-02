@@ -39,8 +39,8 @@ namespace ArtGallery.Tests
         [TestMethod]
         public void Pictire_AddNullValueByConstructor_ThrowsException()
         {
-            arde art", 1915, Technic.Gouache));
-
+            Assert.ThrowsException<System.ArgumentNullException>(() => new GalleryPicture(null, "Kazimir Malevich", "Suprematism",
+                "Avant-garde art", 1915, Technic.Gouache));
 
         }
     }
